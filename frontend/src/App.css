@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+  color: white;
+  min-height: 100vh;
+}
+
+.app {
+  padding: 40px;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  padding: 24px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  margin-bottom: 40px;
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+.navbar h2 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  background: linear-gradient(
+    to right,
+    #60a5fa,
+    #a78bfa
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 28px;
+}
+
+/* Cards */
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 24px;
+
+  padding: 24px;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,0.25);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 12px 40px rgba(59,130,246,0.3);
+}
+
+.card h2 {
+  margin-bottom: 18px;
+
+  font-size: 1.4rem;
+
+  color: #f8fafc;
+}
+
+/* Textarea */
+
+textarea {
+  width: 100%;
+
+  min-height: 140px;
+
+  resize: none;
+
+  border: none;
+
+  outline: none;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  margin-top: 10px;
+
+  font-size: 15px;
+
+  background: rgba(255,255,255,0.08);
+
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.3s;
+}
+
+textarea:focus {
+  border: 1px solid #60a5fa;
+
+  box-shadow:
+    0 0 20px rgba(96,165,250,0.3);
+}
+
+textarea::placeholder {
+  color: #cbd5e1;
+}
+
+/* Buttons */
+
+button {
+  margin-top: 18px;
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: white;
+
+  background: linear-gradient(
+    to right,
+    #2563eb,
+    #7c3aed
+  );
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 4px 20px rgba(59,130,246,0.4);
+}
+
+button:hover {
+  transform: scale(1.02);
+
+  opacity: 0.95;
+}
+
+/* Results */
+
+.result {
+  margin-top: 20px;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  line-height: 1.6;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .app {
+    padding: 20px;
+  }
+
+  .navbar h2 {
+    font-size: 1.5rem;
+  }
+}
